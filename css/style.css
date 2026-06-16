@@ -218,3 +218,45 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+/* ==========================================================================
+   CÓDIGO PARA PANTALLAS PEQUEÑAS (CELULARES Y TABLETS)
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    /* El menú de navegación se apila verticalmente en vez de ir de lado */
+    .contenedor-menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .enlaces a {
+        margin: 0 10px; /* Espacio uniforme para los botones del menú */
+    }
+
+    /* El texto del inicio se hace un poco más pequeño para que no se corte */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Las tarjetas ahora se acomodarán una debajo de otra en una sola columna */
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%; /* Ocupa todo el ancho disponible del celular */
+        max-width: 340px; /* Pero no se estira de forma fea */
+    }
+
+    /* El formulario se adapta para no salirse de los bordes de la pantalla */
+    .contenedor-formulario {
+        padding: 20px;
+        width: 100%;
+    }
+}
