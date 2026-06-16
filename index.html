@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Tours El Salvador</title>
+    <!-- Enlace a tu estilo sencillo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navegacion">
+        <div class="contenedor-menu">
+            <a href="#" class="logo">Explora Tours SV</a>
+            <div class="enlaces">
+                <a href="#inicio">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Presentación de la página -->
+    <header id="inicio" class="hero">
+        <h1>Descubre El Salvador</h1>
+        <p>Viajes inolvidables y aventuras únicas.</p>
+        <a href="#destinos" class="boton">Ver Destinos</a>
+    </header>
+
+    <!-- Sección de Tarjetas -->
+    <main id="destinos" class="seccion">
+        <h2 class="titulo-seccion">Nuestros Paquetes</h2>
+        
+        <div class="contenedor-tarjetas">
+            <!-- Tarjeta 1 -->
+            <div class="tarjeta">
+                <img src="img/destino1.jpg" alt="Playa El Tunco">
+                <div class="tarjeta-info">
+                    <h3>Ruta Sol y Playa</h3>
+                    <p>Disfruta del surf y los mejores atardeceres en El Tunco.</p>
+                    <span class="precio">$45.00</span>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta">
+                <img src="img/destino2.jpg" alt="Volcán Santa Ana">
+                <div class="tarjeta-info">
+                    <h3>Caminata al Volcán</h3>
+                    <p>Corona la cima del Volcán de Santa Ana y su laguna turquesa.</p>
+                    <span class="precio">$35.00</span>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="tarjeta">
+                <img src="img/destino3.jpg" alt="Ruta de las Flores">
+                <div class="tarjeta-info">
+                    <h3>Ruta de las Flores</h3>
+                    <p>Conoce la cultura y el clima fresco de Ataco y Juayúa.</p>
+                    <span class="precio">$30.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="seccion fondo-gris">
+        <div class="contenedor-formulario">
+            <h2>Contáctanos</h2>
+            
+            <!-- Mensaje que aparecerá al enviar -->
+            <p id="mensaje-exito" class="alerta ocultar">¡Gracias! Te contactaremos pronto.</p>
+
+            <form id="form-contacto">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" required>
+
+                <label for="mensaje">¿Qué destino te interesa?</label>
+                <textarea id="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Explora Tours El Salvador.</p>
+    </footer>
+
+    <!-- Tu script de JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
