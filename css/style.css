@@ -1,0 +1,220 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.navegacion {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.contenedor-menu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.enlaces a:hover {
+    color: #0070f3;
+}
+
+/* --- HERO (INICIO) --- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: #0070f3;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* --- SECCIONES Y TARJETAS --- */
+.seccion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 320px;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta-info {
+    padding: 20px;
+}
+
+.tarjeta-info h3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta-info p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.precio {
+    display: inline-block;
+    background-color: #e6f7ff;
+    color: #0070f3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* --- FORMULARIO --- */
+.fondo-gris {
+    background-color: #f9f9f9;
+    max-width: 100%;
+}
+
+.contenedor-formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contenedor-formulario h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.boton-enviar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #0070f3;
+}
+
+/* --- ALERTAS Y COMPORTAMIENTOS --- */
+.alerta {
+    background-color: #e6ffed;
+    color: #28a745;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #b6effb;
+}
+
+.ocultar {
+    display: none;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
